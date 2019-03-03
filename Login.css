@@ -26,7 +26,6 @@ h1,h2,h3,h4,h5,h6 {
 .logIn {
   width: 400px;
   padding: 15px;
-  order: 2;
   background-color: #fff;
   flex-shrink: 0;
 }
@@ -76,7 +75,7 @@ h1,h2,h3,h4,h5,h6 {
   vertical-align: top;
   padding: 15px;
   background: #efeff1;
-  border-right:1px solid #000;
+  border-left:1px solid #000;
 }
 .marginBottomZero {
   margin-bottom: 0;
@@ -113,7 +112,7 @@ h1,h2,h3,h4,h5,h6 {
     width: 100%;
   }
   .helpWapper {
-    border-right: 0px;
+    border-left: 0px;
     order: 2;
   }
   .LoginBoxTop {
