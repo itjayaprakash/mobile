@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0px;
+  padding: 0px 0px 10px 0px;
+}
+.mainWapper p {
+  margin: 0px;
+  padding: 0px 0px 15px 0px;
+}
+.login_bg {
+  background: #f1f1f1;
+}
+.mainWapper {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  min-height: 100vh;
+  max-width: 1300px;
+  margin: auto;
+}
+.logIn {
+  width: 400px;
+  padding: 15px;
+  order: 2;
+  background-color: #fff;
+  flex-shrink: 0;
+}
+.LoginBoxTop {
+  display: flex;
+}
+.windowsImage {
+  width: 70px;
+  flex-shrink: 0;
+}
+.IWAbutton {
+  vertical-align: bottom;
+  /* margin-left: auto; */
+  padding-top: 10px;
+}
+.LoginButton {
+  text-align: left;
+  padding-left: 180px;
+}
+.LoginButton button, .IWAbutton button  {
+  background-color: #5a5252;
+  color: white;
+  border: 0px;
+  outline: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.userName label, .Password label {
+  width: 180px;
+  flex-shrink: 0;
+}
+.userName {
+  margin-bottom: 15px;
+}
+.userName , .Password{
+  display: flex;
+  margin-bottom: 18px;
+  position: relative;
+}
+.loginInput input {
+  height: 35px;
+  border: 1px solid #d2d2d2;
+  padding: 15px;
+  width: 100%;
+}
+.helpWapper {
+  vertical-align: top;
+  padding: 15px;
+  background: #efeff1;
+  border-right:1px solid #000;
+}
+.marginBottomZero {
+  margin-bottom: 0;
+}
+.top {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #000;
+  border-bottom-width: 0px;
+}
+.bottom {
+  padding: 15px;
+  border: 1px solid #000; 
+}
+.bottom h3 {
+  margin: 0px;
+}
+.errormessage{
+  color: red;
+  font-size: 14px;
+  left: 180px;
+  position: absolute;
+  top: -19px;
+}
+/* Responsive Media Query */
+@media(max-width:767px) {
+  .mainWapper {
+    padding: 15px;
+  }
+  .mainWapper .top {
+    flex-wrap: wrap;
+  }
+  .logIn {
+    width: 100%;
+  }
+  .helpWapper {
+    border-right: 0px;
+    order: 2;
+  }
+  .LoginBoxTop {
+    flex-wrap: wrap;
+  }
+  .LoginButton {
+    text-align: left;
+    padding-left: 180px;
+    margin-left: 0px;
+  }
+}
+@media(max-width:469px) {
+  .LoginButton {
+    padding-left: 0px;
+  }
+  .userName, .Password {
+    flex-wrap: wrap;
+  }
+  .userName label, .Password label {
+    width: 100%;
+    padding-bottom: 5px;
+  }
+  .loginInput input {
+    width: 100%;
+  }
+  .errormessage {
+    top: 60px;
+    right: 0;
+    left: auto;
+  }
+}
